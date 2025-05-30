@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Archivo de reglas de extracción de datos para copias de seguridad y transferencia de dispositivos en Android -->
+<!--
+   Este archivo define qué datos pueden ser respaldados en la nube o transferidos entre dispositivos.
+   Para más información sobre los cambios en la copia de seguridad desde Android 12, consulta:
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+-->
+<data-extraction-rules>
+
+    <cloud-backup>
+        <!--
+           Define las reglas para la copia de seguridad en la nube.
+           Puedes personalizar qué datos serán respaldados y cuáles serán excluidos usando las siguientes etiquetas:
+
+           <include domain="sharedpref" path="settings.xml"/>  -> Incluiría solo el archivo "settings.xml" de preferencias compartidas.
+           <exclude domain="database" path="user_data.db"/>  -> Excluiría la base de datos "user_data.db".
+        -->
+    </cloud-backup>
+
+    <!--
+       Sección opcional para la transferencia de datos entre dispositivos.
+       Se pueden usar las mismas etiquetas <include> y <exclude> para especificar qué archivos deben ser transferidos.
+    -->
+    <!--
+    <device-transfer>
+        <include domain="files" path="profile.jpg"/>  -> Permitiría transferir el archivo "profile.jpg" entre dispositivos.
+        <exclude domain="database" path="history.db"/>  -> Evitaría la transferencia de la base de datos "history.db".
+    </device-transfer>
+    -->
+</data-extraction-rules>

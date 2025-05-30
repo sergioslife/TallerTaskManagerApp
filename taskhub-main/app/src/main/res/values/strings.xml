@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TaskHub</string>
+
+    <string name="home">Inicio</string>
+    <string name="tasks">Tareas</string>
+    <string name="add">Agregar</string>
+    <string name="message">Mensaje</string>
+    <string name="profile">Perfil</string>
+</resources>

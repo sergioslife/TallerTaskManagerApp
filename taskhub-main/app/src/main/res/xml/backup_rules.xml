@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Archivo de reglas de copia de seguridad para Android Auto Backup -->
+<!--
+   Este archivo permite definir qué datos de la aplicación deben ser respaldados automáticamente.
+   Para más detalles sobre cómo funciona Auto Backup en Android, puedes consultar:
+   https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <!--
+       Para incluir todos los datos almacenados en preferencias compartidas en la copia de seguridad,
+       se puede usar la siguiente línea. Esto respaldaría todas las configuraciones de usuario.
+
+       <include domain="sharedpref" path="."/>
+    -->
+
+    <!--
+       Para excluir un archivo específico de las preferencias compartidas (por ejemplo, `device.xml`),
+       se puede usar la siguiente línea. Esto evita que ciertos datos sensibles sean respaldados.
+
+       <exclude domain="sharedpref" path="device.xml"/>
+    -->
+</full-backup-content>
